@@ -103,3 +103,188 @@
 .nav-list .nav-list-link {
   font-size: 0.95rem;
 }
+
+// Weekly schedule
+.schedule {
+  margin: $sp-4 0 $sp-6;
+  overflow-x: auto;
+  border: $border $border-color;
+  border-radius: 8px;
+  background: $body-background-color;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
+    0 5px 16px rgba(0, 0, 0, 0.04);
+}
+
+.schedule-board {
+  position: relative;
+  min-width: 40rem;
+}
+
+.schedule-timeline {
+  position: absolute;
+  z-index: 0;
+  top: 3rem;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  pointer-events: none;
+}
+
+.schedule-timeline li {
+  position: relative;
+  height: 3rem;
+  margin: 0;
+  border-top: $border $border-color;
+}
+
+.schedule-timeline li::before {
+  display: none;
+}
+
+.schedule-timeline span {
+  position: relative;
+  top: -0.75rem;
+  display: inline-block;
+  width: 4.75rem;
+  padding-right: $sp-3;
+  color: $grey-dk-000;
+  background: $body-background-color;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  text-align: right;
+}
+
+.schedule-days {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(15rem, 1fr));
+  margin-left: 4.75rem;
+}
+
+.schedule-day {
+  min-width: 0;
+  border-left: $border $border-color;
+}
+
+.schedule-day h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  margin: 0;
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+
+.schedule-events {
+  position: relative;
+  height: 33rem;
+}
+
+.schedule-event {
+  position: absolute;
+  right: $sp-2;
+  left: $sp-2;
+  display: flex;
+  flex-direction: column;
+  min-height: 4rem;
+  margin: 0;
+  padding: $sp-3;
+  overflow: hidden;
+  border-radius: 6px;
+  color: $white;
+  background: $blue-100;
+  box-shadow: 0 8px 18px rgba(39, 78, 145, 0.2),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.14);
+}
+
+.schedule-event strong {
+  font-size: 1rem;
+}
+
+.schedule-event span {
+  margin-top: $sp-1;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+// Staff cards
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: $sp-4;
+  margin: $sp-4 0 $sp-6;
+}
+
+.staff-grid--instructor {
+  grid-template-columns: minmax(15rem, 28rem);
+}
+
+.staff-card {
+  display: flex;
+  align-items: flex-start;
+  gap: $sp-4;
+  min-width: 0;
+  padding: $sp-4;
+  border: $border $border-color;
+  border-radius: 8px;
+  background: $body-background-color;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05),
+    0 5px 16px rgba(0, 0, 0, 0.035);
+}
+
+.staff-card--instructor {
+  border-top: 3px solid $blue-100;
+}
+
+.staff-avatar {
+  display: flex;
+  flex: 0 0 3.25rem;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  color: $white;
+  background: $blue-100;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.staff-avatar--ta {
+  background: $purple-100;
+}
+
+.staff-details {
+  min-width: 0;
+}
+
+.staff-details h3,
+.staff-details p {
+  margin: 0 0 $sp-1;
+}
+
+.staff-details h3 {
+  font-size: 1.05rem !important;
+}
+
+.staff-details a {
+  overflow-wrap: anywhere;
+}
+
+.staff-role {
+  color: $grey-dk-100;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.staff-meta {
+  margin-top: $sp-2 !important;
+  color: $grey-dk-100;
+  font-size: 0.85rem;
+}

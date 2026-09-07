@@ -46,3 +46,8 @@ Edit `_data/assignments.yml`:
 
 The `file` field is optional. Without it, the assignment and deadline remain
 visible but no download link is shown.
+
+## Update staff and schedule
+
+- Edit `_data/staff.yml` to update instructor or teaching-assistant details.
+- Edit `_data/schedule.yml` to update class days, times, or locations.

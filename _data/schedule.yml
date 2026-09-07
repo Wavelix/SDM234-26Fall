@@ -1,0 +1,26 @@
+timeline:
+  - "16:00"
+  - "16:30"
+  - "17:00"
+  - "17:30"
+  - "18:00"
+  - "18:30"
+  - "19:00"
+  - "19:30"
+  - "20:00"
+  - "20:30"
+  - "21:00"
+
+days:
+  - name: Monday
+    events:
+      - name: Lecture
+        start: "16:20"
+        end: "18:10"
+        location: Room 208, Lecture Hall 3
+  - name: Wednesday
+    events:
+      - name: Lecture
+        start: "19:00"
+        end: "20:50"
+        location: Room 208, Lecture Hall 3
