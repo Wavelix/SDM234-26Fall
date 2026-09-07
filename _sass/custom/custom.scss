@@ -1,0 +1,105 @@
+// Course resource cards, inspired by the compact module layout used by EE211.
+.main-content {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.main-content h1 {
+  letter-spacing: -0.025em;
+}
+
+.course-module {
+  margin: $sp-4 0 $sp-6;
+  overflow: hidden;
+  border: $border $border-color;
+  border-radius: 8px;
+  background: $body-background-color;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
+    0 5px 16px rgba(0, 0, 0, 0.04);
+}
+
+.course-module dl {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 1fr) minmax(0, 4fr);
+  margin: 0;
+}
+
+.course-module dt,
+.course-module dd {
+  margin: 0;
+  padding: $sp-3 $sp-4;
+  border-top: $border $border-color;
+}
+
+.course-module dt:first-of-type,
+.course-module dt:first-of-type + dd {
+  border-top: 0;
+}
+
+.course-module dt {
+  color: $body-text-color;
+  font-weight: 600;
+  text-align: right;
+}
+
+.course-module dd {
+  min-width: 0;
+}
+
+.course-resource {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: $sp-3;
+}
+
+.course-resource__title {
+  min-width: 0;
+  font-weight: 500;
+}
+
+.course-resource__download {
+  flex: 0 0 auto;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.course-resource .label {
+  margin-right: $sp-2;
+  vertical-align: 0.08em;
+}
+
+@media (max-width: 31.25rem) {
+  .course-module dl {
+    display: block;
+  }
+
+  .course-module dt {
+    padding-bottom: $sp-1;
+    text-align: left;
+  }
+
+  .course-module dd {
+    padding-top: $sp-1;
+    border-top: 0;
+  }
+
+  .course-module dt:not(:first-of-type) {
+    border-top: $border $border-color;
+  }
+
+  .course-resource {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: $sp-2;
+  }
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.nav-list .nav-list-link {
+  font-size: 0.95rem;
+}

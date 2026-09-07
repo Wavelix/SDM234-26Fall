@@ -1,9 +1,14 @@
-title: SDM234 · Fall 2026
+title: SDM234 26Fall
 description: Course materials for SDM234, Fall 2026
 theme: just-the-docs
+color_scheme: light
+search_enabled: true
+heading_anchors: true
 
 url: https://wavelix.github.io
 repository: Wavelix/SDM234-26Fall
 
 aux_links:
   GitHub Repository: https://github.com/Wavelix/SDM234-26Fall
+
+footer_content: "SDM234 · Mathematical Foundations of Control Engineering"

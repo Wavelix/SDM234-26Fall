@@ -1,0 +1,6 @@
+# Update ddl when the deadline is confirmed.
+# Add file only after the assignment document has been uploaded.
+assignments:
+  - title: Assignment 1
+    ddl: TBA
+    # file: /assets/assignments/Assignment1.pdf
