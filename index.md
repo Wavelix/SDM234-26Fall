@@ -13,7 +13,7 @@ This course aims to introduce how to use mathematics as a tool & technique to de
 ## Information
 
 - **Course ID:** SDM234
-- **Credits:** 3
+- **Credits:** 4
 - **Lecture Location:** room 208, Lecture Hall 3
 - **Office:** Room 506: Building 9, Chuangyuan
 

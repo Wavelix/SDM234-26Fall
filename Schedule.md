@@ -9,15 +9,15 @@ permalink: /schedule/
 
 <div class="schedule" aria-label="Weekly class schedule">
   <div class="schedule-board">
-    <ol class="schedule-timeline" aria-hidden="true">
+    <div class="schedule-timeline" aria-hidden="true">
       {% for time in site.data.schedule.timeline %}
-      <li><span>{{ time }}</span></li>
+      <div class="schedule-tick"><span>{{ time }}</span></div>
       {% endfor %}
-    </ol>
+    </div>
     <div class="schedule-days">
       {% for day in site.data.schedule.days %}
       <section class="schedule-day">
-        <h2>{{ day.name }}</h2>
+        <h2 class="no_anchor">{{ day.name }}</h2>
         <div class="schedule-events">
           {% for event in day.events %}
           {% assign start_parts = event.start | split: ':' %}

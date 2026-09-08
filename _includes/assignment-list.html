@@ -1,0 +1,17 @@
+<div class="course-module">
+  <dl>
+    {% for item in include.items %}
+    <dt>{{ item.title }}</dt>
+    <dd>
+      <div class="course-resource">
+        {% if item.ddl %}
+        <span class="course-resource__title"><strong class="label label-red">DDL</strong>{{ item.ddl }}</span>
+        {% endif %}
+        {% if item.file %}
+        <a class="course-resource__download" href="{{ item.file | relative_url }}" download>Download</a>
+        {% endif %}
+      </div>
+    </dd>
+    {% endfor %}
+  </dl>
+</div>

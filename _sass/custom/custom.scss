@@ -20,7 +20,7 @@
 
 .course-module dl {
   display: grid;
-  grid-template-columns: minmax(7.5rem, 1fr) minmax(0, 4fr);
+  grid-template-columns: max-content minmax(0, 1fr);
   margin: 0;
 }
 
@@ -37,17 +37,22 @@
 }
 
 .course-module dt {
+  display: flex;
+  align-items: center;
   color: $body-text-color;
   font-weight: 600;
-  text-align: right;
+  line-height: 1.5;
 }
 
 .course-module dd {
+  display: flex;
+  align-items: center;
   min-width: 0;
 }
 
 .course-resource {
   display: flex;
+  width: 100%;
   align-items: baseline;
   justify-content: space-between;
   gap: $sp-3;
@@ -55,16 +60,25 @@
 
 .course-resource__title {
   min-width: 0;
-  font-weight: 500;
+  color: $link-color;
+  font-weight: 400;
+}
+
+.course-resource__title--material {
+  font-weight: 700;
 }
 
 .course-resource__download {
   flex: 0 0 auto;
+  margin-left: auto;
   font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
   white-space: nowrap;
 }
 
 .course-resource .label {
+  margin-left: 0;
   margin-right: $sp-2;
   vertical-align: 0.08em;
 }
@@ -76,7 +90,6 @@
 
   .course-module dt {
     padding-bottom: $sp-1;
-    text-align: left;
   }
 
   .course-module dd {
@@ -117,7 +130,7 @@
 
 .schedule-board {
   position: relative;
-  min-width: 40rem;
+  min-width: 42rem;
 }
 
 .schedule-timeline {
@@ -128,19 +141,14 @@
   left: 0;
   margin: 0;
   padding: 0;
-  list-style: none;
   pointer-events: none;
 }
 
-.schedule-timeline li {
+.schedule-tick {
   position: relative;
   height: 3rem;
   margin: 0;
   border-top: $border $border-color;
-}
-
-.schedule-timeline li::before {
-  display: none;
 }
 
 .schedule-timeline span {
@@ -160,7 +168,7 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(2, minmax(15rem, 1fr));
+  grid-template-columns: repeat(3, minmax(12rem, 1fr));
   margin-left: 4.75rem;
 }
 

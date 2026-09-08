@@ -1,11 +1,13 @@
-# To add a lecture, copy these two lines and update the title and file path.
-# Keep lecture files in assets/slides/.
+# To add a lecture, copy one item below and edit its left label and right title.
+# Add file only after the slide deck is uploaded to assets/slides/.
 textbook:
   title: Advanced Engineering Mathematics
   file: /assets/AdvancedEngineeringMathematics.pdf
 
 lectures:
-  - title: Lecture 1
+  - label: Lecture 1
+    title: Lecture 1 (not complete)
     file: /assets/slides/SDM234_Lecture1.pptx
 
-  - title: Lecture 2
+  - label: Lecture 2
+    title: upcoming...

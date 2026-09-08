@@ -14,7 +14,7 @@ permalink: /staff/
   <article class="staff-card staff-card--instructor">
     <div class="staff-avatar" aria-hidden="true">{{ person.name | slice: 0 }}</div>
     <div class="staff-details">
-      <h3>{{ person.name }}</h3>
+      <h3 class="no_anchor">{{ person.name }}</h3>
       <p class="staff-role">Instructor</p>
       <a href="mailto:{{ person.email }}">{{ person.email }}</a>
       {% if person.office %}<p class="staff-meta">{{ person.office }}</p>{% endif %}
@@ -30,7 +30,7 @@ permalink: /staff/
   <article class="staff-card">
     <div class="staff-avatar staff-avatar--ta" aria-hidden="true">{{ person.name | slice: 0 }}</div>
     <div class="staff-details">
-      <h3>{{ person.name }}</h3>
+      <h3 class="no_anchor">{{ person.name }}</h3>
       <p class="staff-role">Teaching Assistant</p>
       <a href="mailto:{{ person.email }}">{{ person.email }}</a>
     </div>
