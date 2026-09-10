@@ -6,8 +6,9 @@ textbook:
 
 lectures:
   - label: Lecture 1
-    title: Lecture 1 (not complete)
+    title: Complex Numbers
     file: /assets/slides/SDM234_Lecture1.pptx
 
   - label: Lecture 2
-    title: upcoming...
+    title: Complex Functions
+    file: /assets/slides/SDM234_Lecture2.pptx

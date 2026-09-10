@@ -2,8 +2,8 @@
 # Add file only after the assignment document has been uploaded.
 assignments:
   - title: Assignment 1
-    # ddl: TBA
-    # file: /assets/assignments/Assignment1.pdf
+    ddl: September 20, 2026
+    file: /assets/assignments/SDM234-HW1.pdf
 
 # Bonus items do not have a deadline.
 # Add file only after the bonus document has been uploaded.
