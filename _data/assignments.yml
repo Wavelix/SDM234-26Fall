@@ -4,6 +4,10 @@ assignments:
   - title: Assignment 1
     ddl: September 20, 2026
     file: /assets/assignments/SDM234-HW1.pdf
+  
+  - title: Assignment 2
+    ddl: September 27, 2026
+    file: /assets/assignments/SDM234-HW2.pdf
 
 # Bonus items do not have a deadline.
 # Add file only after the bonus document has been uploaded.
